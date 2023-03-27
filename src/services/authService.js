@@ -1,6 +1,6 @@
 import * as request from './requester';
 
-const baseUrl = 'http://localhost:3030/users';
+const baseUrl = 'https://petyadesignstudio-api.onrender.com/users';
 
 export const login = (email, password) => {
     return request.post(`${baseUrl}/login`, { email, password });
